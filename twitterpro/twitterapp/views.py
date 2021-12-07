@@ -23,7 +23,12 @@ def home_timeline(request):
         return render(request, 'post/gettweet.html', {'public_tweets': public_tweets})
 
 
-        
+def search(request):
+         
+        api = tweepy.API(auth)
+        india_woeid = 23424848
+        trend_result = api.get_place_trends(india_woeid)
+        return render(request, 'post/search.html', {'trend_result': trend_result})        
 
       
 
