@@ -24,6 +24,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index,name='index'),
     path('get',views.home_timeline, name='home_timeline'),
+    path('search',views.search,name='search')
     
 
 ]
