@@ -23,8 +23,9 @@ from twitterapp import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index,name='index'),
-    path('get',views.home_timeline, name='home_timeline'),
-    path('search',views.search,name='search')
+    path('getsuser',views.user_timeline, name='getsuser'),
+    path('getall',views.home_timeline, name='getall'),
+    path('search',views.search,name='search'),
     
 
 ]

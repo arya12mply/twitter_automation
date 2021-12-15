@@ -16,12 +16,15 @@ def index(request):
 
     return render(request,'post/posttweet.html')
 
-def home_timeline(request):
+def user_timeline(request):
 
+        api = tweepy.API(auth)
+        public_tweets = api.user_timeline()
+        return render(request, 'post/gettweet.html', {'public_tweets': public_tweets})
+def home_timeline(request):
         api = tweepy.API(auth)
         public_tweets = api.home_timeline()
         return render(request, 'post/gettweet.html', {'public_tweets': public_tweets})
-
 
 def search(request):
          

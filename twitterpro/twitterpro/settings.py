@@ -28,10 +28,10 @@ DEBUG = True
 ALLOWED_HOSTS = []
 #Twitter credentials
 
-API_KEY ='########'
-API_KEY_SECRET = '#####'
-ACCESS_TOKEN = '#####'
-ACCESS_TOKEN_SECRET='####'
+API_KEY =''
+API_KEY_SECRET = ''
+ACCESS_TOKEN = ''
+ACCESS_TOKEN_SECRET=''
 
 # Application definition
 
